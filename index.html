@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 </head>
 <body>
 
@@ -169,13 +170,36 @@
   </section>
 
   <section class="news" id="vip">
-    <h2>Become a VIP</h2>
-    <p class="sub">Get launch day pricing and early access — first in line, first served.</p>
-    <form id="vipForm" novalidate>
-      <input id="vipEmail" type="email" placeholder="Email address" required aria-label="Email address">
-      <button type="submit">Join VIP List</button>
-    </form>
-    <p id="vipMsg" class="vip-msg" role="status"></p>
+    <h2>VW Rewards</h2>
+    <p class="sub">Sign up with your email to join, or sign back in anytime to check your points.</p>
+
+    <div class="rewards-box">
+
+      <!-- Step 1: enter email -->
+      <form id="emailForm" class="rw-step" novalidate>
+        <input id="rwEmail" name="email" type="email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit">Continue</button>
+      </form>
+
+      <!-- Step 2: enter the 6-digit code emailed to them -->
+      <form id="codeForm" class="rw-step hidden" novalidate>
+        <p class="rw-hint">We sent a 6-digit code to <b id="codeEmailLabel"></b>. Enter it below.</p>
+        <input id="rwCode" name="code" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="123456" required aria-label="6-digit code">
+        <button type="submit">Verify</button>
+      </form>
+
+      <!-- Step 3: signed in, show points -->
+      <div id="pointsView" class="rw-step hidden">
+        <p class="rw-hint">Signed in as <b id="pointsEmailLabel"></b></p>
+        <div class="points-display">
+          <span id="pointsValue">0</span>
+          <span class="points-label">points</span>
+        </div>
+        <button id="signOutBtn" class="btn ghost small">Sign out</button>
+      </div>
+
+      <p id="rwMsg" class="vip-msg" role="status"></p>
+    </div>
   </section>
 </main>
 

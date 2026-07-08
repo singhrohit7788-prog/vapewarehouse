@@ -172,6 +172,20 @@ button:hover{transform:translateY(-2px)}
 .vip-msg{min-height:24px;margin-top:16px;font-size:.85rem;color:var(--green)}
 .vip-msg.error{color:#ff6b6b}
 
+/* Rewards widget */
+.rewards-box{max-width:380px;margin:0 auto}
+.rw-step{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.rw-step.hidden{display:none}
+.rw-hint{font-size:.82rem;color:var(--text-dim);margin-bottom:14px;width:100%;text-align:center}
+.rw-hint b{color:var(--text)}
+#rwCode{text-align:center;letter-spacing:.3em;font-family:var(--mono)}
+.points-display{
+  background:var(--panel);border:1px solid var(--line);border-radius:20px;
+  padding:28px;margin-bottom:18px;
+}
+#pointsValue{display:block;font-family:var(--mono);color:var(--green);font-size:2.6rem;font-weight:700}
+.points-label{display:block;color:var(--text-dim);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+
 /* Footer */
 footer{border-top:1px solid var(--line);padding:60px 24px 30px}
 .foot-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px}
