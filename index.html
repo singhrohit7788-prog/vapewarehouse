@@ -1,1 +1,87 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vape Warehouse</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div class="bg"></div><section class="hero"><div class="glass"><div class="pill">19+ ADULTS ONLY</div><h1>VAPE <span>WAREHOUSE</span></h1><p class="tag">Premium Vapes • Everyday Low Prices</p><h2>COMING SOON TO REGINA</h2><p>Regina's newest destination for premium vape products, warehouse pricing and fast local delivery.</p><div class="count"><div><b id="d">00</b><span>Days</span></div><div><b id="h">00</b><span>Hours</span></div><div><b id="m">00</b><span>Minutes</span></div><div><b id="s">00</b><span>Seconds</span></div></div><a class="btn" href="mailto:info@vapewarehouse.ca">Notify Me</a></div></section><section class="cards"><div>🚚<h3>Local Delivery</h3></div><div>💰<h3>Warehouse Prices</h3></div><div>⭐<h3>Premium Brands</h3></div><div>🎁<h3>Loyalty Rewards</h3></div></section><section class="news"><h2>Become a VIP</h2><input placeholder="Email address"><button>Join VIP List</button></section><footer>info@vapewarehouse.ca<br>© 2026 Vape Warehouse</footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vape Warehouse — Coming Soon to Regina</title>
+<meta name="description" content="Regina's newest destination for premium vape products, warehouse pricing and fast local delivery. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand">VAPE<span>WAREHOUSE</span></div>
+  <div class="pill">19+ Adults Only</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="glass">
+      <p class="eyebrow">Regina · Saskatchewan</p>
+      <h1>Warehouse pricing<br>lands in <span>Regina</span></h1>
+      <p class="tag">Premium vapes, everyday low prices — coming soon.</p>
+
+      <div class="count" role="timer" aria-label="Countdown to launch">
+        <div><b id="d">00</b><span>Days</span></div>
+        <div><b id="h">00</b><span>Hours</span></div>
+        <div><b id="m">00</b><span>Minutes</span></div>
+        <div><b id="s">00</b><span>Seconds</span></div>
+      </div>
+
+      <p class="desc">Regina's newest destination for premium vape products, warehouse pricing and fast local delivery.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="mailto:info@vapewarehouse.ca">Notify Me</a>
+        <a class="btn ghost" href="#vip">Join the VIP list</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <span class="ic">🚚</span>
+      <h3>Local Delivery</h3>
+      <p>Fast drop-off across Regina, right to your door.</p>
+    </div>
+    <div class="card">
+      <span class="ic">💰</span>
+      <h3>Warehouse Prices</h3>
+      <p>Bulk buying power, passed straight to you.</p>
+    </div>
+    <div class="card">
+      <span class="ic">⭐</span>
+      <h3>Premium Brands</h3>
+      <p>Curated, quality-checked, no knockoffs.</p>
+    </div>
+    <div class="card">
+      <span class="ic">🎁</span>
+      <h3>Loyalty Rewards</h3>
+      <p>Points on every visit, redeemable in-store.</p>
+    </div>
+  </section>
+
+  <section class="news" id="vip">
+    <h2>Become a VIP</h2>
+    <p class="sub">Get launch day pricing and early access — first in line, first served.</p>
+    <form id="vipForm" novalidate>
+      <input id="vipEmail" type="email" placeholder="Email address" required aria-label="Email address">
+      <button type="submit">Join VIP List</button>
+    </form>
+    <p id="vipMsg" class="vip-msg" role="status"></p>
+  </section>
+</main>
+
+<footer>
+  <a href="mailto:info@vapewarehouse.ca">info@vapewarehouse.ca</a>
+  <span class="dot">·</span>
+  <span>© 2026 Vape Warehouse</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
