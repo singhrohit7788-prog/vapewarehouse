@@ -14,8 +14,30 @@
 
 <div class="bg" aria-hidden="true"></div>
 
+<!-- Age gate -->
+<div id="ageGate" class="age-gate">
+  <div class="age-box">
+    <div class="age-logo">VAPE<span>WAREHOUSE</span></div>
+    <h2>Are you 19 years of age or older?</h2>
+    <p>You must be of legal vaping age in Saskatchewan to enter this site.</p>
+    <div class="age-actions">
+      <button id="ageYes" class="btn">Yes, I'm 19+</button>
+      <button id="ageNo" class="btn ghost">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Health warning strip -->
+<div class="warning-strip">Vaping products contain nicotine, an addictive chemical.</div>
+
 <header class="topbar">
   <div class="brand">VAPE<span>WAREHOUSE</span></div>
+  <nav class="nav" aria-label="Primary">
+    <a href="#shop">Shop</a>
+    <a href="#rewards">Rewards</a>
+    <a href="#faq">FAQ</a>
+    <a href="#vip">Locations</a>
+  </nav>
   <div class="pill">19+ Adults Only</div>
 </header>
 
@@ -36,32 +58,113 @@
       <p class="desc">Regina's newest destination for premium vape products, warehouse pricing and fast local delivery.</p>
 
       <div class="cta-row">
-        <a class="btn" href="mailto:info@vapewarehouse.ca">Notify Me</a>
-        <a class="btn ghost" href="#vip">Join the VIP list</a>
+        <a class="btn" href="#vip">Notify Me</a>
+        <a class="btn ghost" href="#shop">Preview the shop</a>
       </div>
     </div>
   </section>
 
-  <section class="cards">
-    <div class="card">
+  <!-- Category grid, styled like a shop landing page -->
+  <section class="shop" id="shop">
+    <div class="section-head">
+      <h2>Shop by category</h2>
+      <p>Full catalogue lands at launch. Get notified the moment doors open.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <span class="cat-tag">Coming soon</span>
+        <span class="ic">🔋</span>
+        <h3>Disposables</h3>
+        <p>High-puff-count devices, curated flavour drops.</p>
+        <a href="#vip" class="cat-link">Notify me →</a>
+      </div>
+      <div class="cat-card">
+        <span class="cat-tag">Coming soon</span>
+        <span class="ic">🧃</span>
+        <h3>Pods &amp; kits</h3>
+        <p>Refillable systems built for daily use.</p>
+        <a href="#vip" class="cat-link">Notify me →</a>
+      </div>
+      <div class="cat-card">
+        <span class="cat-tag">Coming soon</span>
+        <span class="ic">🧪</span>
+        <h3>E-liquids</h3>
+        <p>Salts and freebase, wide flavour range.</p>
+        <a href="#vip" class="cat-link">Notify me →</a>
+      </div>
+      <div class="cat-card">
+        <span class="cat-tag">Coming soon</span>
+        <span class="ic">⚙️</span>
+        <h3>Devices &amp; accessories</h3>
+        <p>Batteries, coils, and everything in between.</p>
+        <a href="#vip" class="cat-link">Notify me →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perk strip, mirrors the promo blocks on a real storefront -->
+  <section class="perks">
+    <div class="perk">
       <span class="ic">🚚</span>
-      <h3>Local Delivery</h3>
+      <h3>Local delivery</h3>
       <p>Fast drop-off across Regina, right to your door.</p>
     </div>
-    <div class="card">
+    <div class="perk">
       <span class="ic">💰</span>
-      <h3>Warehouse Prices</h3>
+      <h3>Warehouse prices</h3>
       <p>Bulk buying power, passed straight to you.</p>
     </div>
-    <div class="card">
+    <div class="perk">
       <span class="ic">⭐</span>
-      <h3>Premium Brands</h3>
+      <h3>Premium brands</h3>
       <p>Curated, quality-checked, no knockoffs.</p>
     </div>
-    <div class="card">
+    <div class="perk">
       <span class="ic">🎁</span>
-      <h3>Loyalty Rewards</h3>
+      <h3>Loyalty rewards</h3>
       <p>Points on every visit, redeemable in-store.</p>
+    </div>
+  </section>
+
+  <!-- Rewards teaser -->
+  <section class="rewards" id="rewards">
+    <div class="rewards-inner">
+      <div>
+        <p class="eyebrow">VW Rewards</p>
+        <h2>Earn points on every purchase</h2>
+        <p class="desc-left">Join free at launch. Every dollar you spend in-store or online earns points toward your next order — no extra card to carry.</p>
+        <a class="btn" href="#vip">Get early access</a>
+      </div>
+      <ul class="rewards-list">
+        <li><span class="num">01</span><div><b>Sign up free</b><p>Join the VIP list below to reserve your spot.</p></div></li>
+        <li><span class="num">02</span><div><b>Earn as you shop</b><p>Points accrue automatically on every order.</p></div></li>
+        <li><span class="num">03</span><div><b>Redeem anytime</b><p>Use points in-store or online, no minimum.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>When do you open?</summary>
+        <p>We're finalizing our Regina location now — join the VIP list and we'll email you the exact opening date first.</p>
+      </details>
+      <details>
+        <summary>Will you deliver locally?</summary>
+        <p>Yes. Local delivery across Regina launches alongside the store, with same-day options for early orders.</p>
+      </details>
+      <details>
+        <summary>Do I need to be 19+?</summary>
+        <p>Yes. Saskatchewan law requires all customers to be 19 years of age or older to purchase vape products.</p>
+      </details>
+      <details>
+        <summary>How does VW Rewards work?</summary>
+        <p>Every purchase earns points automatically once you're signed up. Redeem them in-store or online — details go out to the VIP list before launch.</p>
+      </details>
     </div>
   </section>
 
@@ -77,9 +180,35 @@
 </main>
 
 <footer>
-  <a href="mailto:info@vapewarehouse.ca">info@vapewarehouse.ca</a>
-  <span class="dot">·</span>
-  <span>© 2026 Vape Warehouse</span>
+  <div class="foot-grid">
+    <div class="foot-col">
+      <div class="brand">VAPE<span>WAREHOUSE</span></div>
+      <p>Regina's newest destination for premium vape products, warehouse pricing and fast local delivery.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Shop</h4>
+      <a href="#shop">Disposables</a>
+      <a href="#shop">Pods &amp; kits</a>
+      <a href="#shop">E-liquids</a>
+      <a href="#shop">Accessories</a>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <a href="#rewards">VW Rewards</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:info@vapewarehouse.ca">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h4>Join the list</h4>
+      <p>Launch pricing, straight to your inbox.</p>
+      <a class="btn ghost small" href="#vip">Sign up</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>info@vapewarehouse.ca</span>
+    <span class="dot">·</span>
+    <span>© 2026 Vape Warehouse</span>
+  </div>
 </footer>
 
 <script src="script.js"></script>

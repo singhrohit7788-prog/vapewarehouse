@@ -1,3 +1,21 @@
+// Age gate
+const gate = document.getElementById('ageGate');
+const ageYes = document.getElementById('ageYes');
+const ageNo = document.getElementById('ageNo');
+
+if (gate){
+  if (sessionStorage.getItem('vw_age_ok') === 'true'){
+    gate.classList.add('hidden');
+  }
+  ageYes.addEventListener('click', () => {
+    sessionStorage.setItem('vw_age_ok', 'true');
+    gate.classList.add('hidden');
+  });
+  ageNo.addEventListener('click', () => {
+    window.location.href = 'https://www.google.com';
+  });
+}
+
 // Countdown — set your real launch date here
 const LAUNCH = new Date();
 LAUNCH.setDate(LAUNCH.getDate() + 90);
