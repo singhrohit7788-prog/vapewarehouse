@@ -1,1 +1,1 @@
-console.log('Welcome to Vape Warehouse');
+const t=new Date();t.setDate(t.getDate()+90);const d=document.getElementById("d"),h=document.getElementById("h"),m=document.getElementById("m"),s=document.getElementById("s");function u(){let x=t-new Date();d.textContent=Math.floor(x/86400000);h.textContent=Math.floor(x%86400000/3600000);m.textContent=Math.floor(x%3600000/60000);s.textContent=Math.floor(x%60000/1000)}u();setInterval(u,1000);
