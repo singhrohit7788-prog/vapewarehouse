@@ -54,8 +54,8 @@ const timer = setInterval(tick, 1000);
 // 1. Create a free project at https://supabase.com
 // 2. Run the SQL from setup-supabase.sql in the SQL editor
 // 3. Paste your project URL + anon key below
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://supabase.com/dashboard/project/fobqozcwcvkefxnegsjo';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvYnFvemN3Y3ZrZWZ4bmVnc2pvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0NzM3MTUsImV4cCI6MjA5OTA0OTcxNX0.WhegouZp1uVPoasSzwnmxSeo6G8luI5ot51y76TnjPU';
 
 const sb = (SUPABASE_URL.startsWith('http'))
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
