@@ -16,9 +16,9 @@ if (gate){
   });
 }
 
-// Countdown — set your real launch date here
-const LAUNCH = new Date();
-LAUNCH.setDate(LAUNCH.getDate() + 90);
+// Countdown — set your real launch date here (year, month is 0-indexed, day)
+// Example: October 1, 2026 at 9:00 AM
+const LAUNCH = new Date(2026, 9, 1, 9, 0, 0);
 
 const el = {
   d: document.getElementById('d'),
