@@ -1,0 +1,12 @@
+<svg viewBox="0 0 340 90" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="76.1,63 45,81 13.9,63 13.9,27 45,9 76.1,27"
+    fill="none" stroke="#00E676" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M33.5,59.4 C33.5,51.3 45,51.3 45,45 C45,38.7 33.5,38.7 33.5,30.6"
+    fill="none" stroke="#00E676" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="55" cy="29" r="4" fill="#00E676"/>
+
+  <text x="104" y="42" font-family="Poppins, sans-serif" font-weight="800"
+    font-size="26" letter-spacing="1" fill="#f4f4f4">VAPE</text>
+  <text x="104" y="68" font-family="Poppins, sans-serif" font-weight="800"
+    font-size="26" letter-spacing="1" fill="#00E676">WAREHOUSE</text>
+</svg>
